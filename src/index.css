@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbbar {
+  z-index: 999999999;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 30px;
+  width: 100%;
+}
+input {
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  margin-left: 50px;
+}
+.carte {
+  background-color: rgba(0, 0, 0, 0.128);
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  height: 500px;
+}
+
+img {
+  width: 330px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  max-height: 165px;
+  min-height: 165px;
+}
+h2,
+p {
+  margin-left: 15px;
+}
+.btn-add {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 100px auto 0;
+}
+.appp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
