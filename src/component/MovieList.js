@@ -1,7 +1,6 @@
 import React from 'react'
 import MovieAdd from './MovieAdd';
 import MovieCard from "./MovieCard";
-import MovieDescription from './MovieDescription';
 
 function MovieList({movies, search}) {
   return (
