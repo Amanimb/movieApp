@@ -2,8 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import MovieList from "../src/component/MovieList";
 import MovieAdd from "./component/MovieAdd";
-import { Routes, Route, Link } from "react-router-dom";
-import MovieDescription from "./component/MovieDescription";
 import MovieCard from "./component/MovieCard";
 
 function App() {
@@ -139,23 +137,7 @@ function App() {
         />
       ) : null}
       <MovieList search={search} movies={movies} />
-      <MovieDescription Movies={movies} />
 
-      <Link to="/MovieDescription">
-        {" "}
-        <MovieCard />
-      </Link>
-
-      <Routes>
-        <Route path="/movieDescription" element={<MovieDescription />} />
-      </Routes>
-      <Routes>
-        {/* <Route path='/trailerDetails' element={<TrailerDetails/>}/> */}
-        <Route
-          path="/MovieDescription/:id"
-          element={<MovieDescription movies={movies} setMovies={setMovies} />}
-        ></Route>
-      </Routes>
     </div>
   );
 }
